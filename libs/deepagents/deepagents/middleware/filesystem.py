@@ -85,13 +85,6 @@ def _file_data_reducer(
     if left is None:
         return {k: v for k, v in right.items() if v is not None}
 
-    # If multiple tool calls update state, `left` may be a list of dicts
-    if isinstance(left, list):
-        left_merged = {}
-        for d in left:
-            left_merged.update(d)
-        left = left_merged
-
     result = {**left}
     for key, value in right.items():
         if value is None:
