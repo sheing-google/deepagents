@@ -323,3 +323,5 @@ The middleware automatically adds instructions about the standard tools. Your cu
 ### Trust model
 
 Deepagents follows a "trust the LLM" model similar to Claude Code. The agent can perform any action the underlying tools allow. Security boundaries should be enforced at the tool/sandbox level, not by expecting the LLM to self-police.
+
+Hello World
